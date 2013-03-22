@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  span.span12
+    div.well.well-large
+      p#console-log
+    form#console-box
+      div.input-append
+        input.input-xlarge.span6#console-input(type='text', placeholder='say hello')
+        div.btn-group
+          button.btn(tabindex='-1') Submit
+          button.btn.dropdown-toggle.btn-info(data-toggle='dropdown', tabindex='-1')
+            span.caret
+          ul.dropdown-menu
+            li
+              a#start(href='') <i class="icon-play"></i> Start
+            li
+              a#restart(href='') <i class="icon-repeat"></i> Restart
+            li
+              a#stop(href='') <i class="icon-ban-circle"></i> Stop
+            li.divider
+            li
+              a(href='#') Help            

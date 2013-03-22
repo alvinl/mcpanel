@@ -1,0 +1,21 @@
+doctype 5
+html
+  head
+    title Mpanel
+    link(rel='stylesheet', href='/css/bootstrap.css')
+  body
+    div.navbar
+      div.navbar-inner
+        a.brand(href='/') Mcpanel
+        span#status.label.label-warning Connection error
+        ul.nav.pull-right
+          li
+            a(href='/console') Console
+          li
+            a(href='#') Settings
+    div.container
+      block content
+    script(src='/socket.io/socket.io.js')
+    script(src='js/jq.js')
+    script(src='js/bootstrap.js')
+    script(src='js/main.js')
